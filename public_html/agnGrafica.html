@@ -14,11 +14,13 @@
         <script src="js/panel/skel-panels.min.js"></script>
         <link rel="stylesheet" href="css/cabeceras/cabeceraAS.css">
         <script src="js/shareAS.js"></script>
-         <link rel="stylesheet" href="css/normalize.min.css">
-         <link rel="canonical" href="http://www.example.com" />
-          <script src="https://apis.google.com/js/platform.js" async defer>
-  {lang: 'es'}
-</script>
+        <link rel="stylesheet" href="css/normalize.min.css">
+
+        <script src="https://apis.google.com/js/platform.js" async defer>
+            {
+                lang: 'es'
+            }
+        </script>
 
     </head>
     <body>
@@ -39,7 +41,7 @@
                 <section class="3u" id="left-sidebar">
                     <nav id="nav">
                         <a  href="index.html" >Inicio</a>
-                       <a  href="sector.html?12" >Indicadores sociales</a>
+                        <a  href="sector.html?12" >Indicadores sociales</a>
                         <a  href="cnsT1.html" >Indicadores territoriales</a>
                         <a  href="relvSector.html?13" >Indicadores relevantes</a>
                         <a  href="agnSse.html" >Agenda social</a>
@@ -154,11 +156,14 @@
                         <a id="btnWhatsApp" class="whatsapp button-wrap" href="#"><span>WhatsApp</span></a>
                         <a class="google button-wrap" href="#" ><span>Google+</span></a>
                         <br>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.siise.gob.ec" data-text="Compartiendo información" data-size="large" data-count="none">Tweet</a>
+
+                       
+                        <div id="shareTweet"></div>
+ 
                         <br>
-                        <br>
-                        <br>
-                        <div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
+                        <div id="shareGoogle"></div>
+                        
+                       
                     </nav> 
                 </section>
 

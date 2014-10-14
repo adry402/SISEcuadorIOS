@@ -8,10 +8,10 @@ $(document).ready(function() {
 
         nombreIndicador = Variable;
     }
-       
-    
+
+
     var pageTitle = document.title + " - SIISE "; //HTML page title
-    var pageUrl ='http://www.siise.gob.ec/share/agnGrafica.html?'+ nombreIndicador; //Location of the page
+    var pageUrl = 'http://www.siise.gob.ec/share/agnGrafica.html?' + nombreIndicador; //Location of the page
     var openLink = '';
 
     //$('#btnWhatsApp').attr("href","whatsapp://send?text=Compartiendo informacion desde "+encodeURIComponent(pageUrl));
@@ -23,24 +23,24 @@ $(document).ready(function() {
         {
             case 'facebook':
                 //openLink = 'http://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
-                openLink = 'http://m.facebook.com/sharer.php?u='+encodeURIComponent(pageUrl)+'&t='+encodeURIComponent('Ministerio de Coordinación de Desarrollo Social') ;                
+                openLink = 'http://m.facebook.com/sharer.php?u=' + encodeURIComponent(pageUrl) + '&t=' + encodeURIComponent('Ministerio de Coordinación de Desarrollo Social');
                 break;
             case 'twitter':
                 //openLink = 'http://twitter.com/home?status=' + encodeURIComponent(pageTitle + ' ' + pageUrl);                
-                openLink = 'http://www.twitter.com/share?text='+encodeURIComponent('Compartiendo información desde #SISEcuador Sistema de Información Social del Ecuador del @SocialEc #MCDS')+'&url=' + encodeURIComponent(pageUrl);                                
+                openLink = 'http://www.twitter.com/share?text=' + encodeURIComponent('Compartiendo información desde #SISEcuador Sistema de Información Social del Ecuador del @SocialEc #MCDS') + '&url=' + encodeURIComponent(pageUrl);
                 break;
             case 'google':
                 openLink = 'https://plus.google.com/share?url=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
                 break;
             case 'email':
-                openLink = 'mailto:?subject=' + pageTitle 
+                openLink = 'mailto:?subject=' + pageTitle
                         + '&body= Se ha compartido información del Ministerio de Coordinación de Desarrollo Social - MCDS ' + encodeURIComponent(pageUrl);
-                break;                
-            case 'whatsapp': 
-                //$('#btnWhatsApp').attr("href","whatsapp://send?text=Compartiendo informacion desde "+encodeURIComponent(pageUrl));
-                openLink ='whatsapp://send?text= Información compartida desde la aplicación "Sistema de Informacion Social del Ecuador SISEcuador" del Miniterio Coordinador de Desarrollo Social MCDS. '+encodeURIComponent(pageUrl);
                 break;
-            
+            case 'whatsapp':
+                //$('#btnWhatsApp').attr("href","whatsapp://send?text=Compartiendo informacion desde "+encodeURIComponent(pageUrl));
+                openLink = 'whatsapp://send?text= Información compartida desde la aplicación "Sistema de Informacion Social del Ecuador SISEcuador" del Miniterio Coordinador de Desarrollo Social MCDS. ' + encodeURIComponent(pageUrl);
+                break;
+
         }
 
         //Parameters for the Popup window
@@ -52,17 +52,29 @@ $(document).ready(function() {
 
         //open Popup window and redirect user to share website.
         window.open(openLink, 'Compartir este enlace', winOptions);
-                
+
         return false;
     });
-     !function(d,s,id){
-                                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                                if(!d.getElementById(id)){
-                                    js=d.createElement(s);
-                                    js.id=id;
-                                    js.src=p+'://platform.twitter.com/widgets.js';
-                                    fjs.parentNode.insertBefore(js,fjs);
-                                }
-                            }(document, 'script', 'twitter-wjs');
-    
+    !function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+
+var auxBotonTweet = "<a href='https://twitter.com/share' class='twitter-share-button' data-url='"+pageUrl+"' data-text='Compartiendo información desde #SISEcuador Sistema de Información Social del Ecuador del @SocialEc #MCDS' data-size='large' data-count='none'>Tweet</a>";
+
+  $("#shareTweet").append(auxBotonTweet);
+
+var auxBotonGoogle = "<br> <div class='g-plus' data-action='share' data-annotation='none' data-height='24'></div>";
+var auxlink = " <link rel='canonical' href='"+pageUrl+"' />";
+
+  $("#shareTweet").append(auxBotonGoogle + ' ' + auxlink);
+
+
+
+
 });

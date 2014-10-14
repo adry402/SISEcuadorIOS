@@ -628,3 +628,7 @@ li.active a, li.active a:hover {
     font-weight: bold;
 }
 
+#widget{
+width: 200px !important;
+background: red !important;
+}
