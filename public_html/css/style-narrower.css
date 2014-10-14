@@ -1,0 +1,231 @@
+/*Tablet Vertical*/
+/* Header */
+#mapaSitio{
+    
+    margin-top: -20px;
+}
+
+#content{
+    margin-top:40px;
+}
+
+
+#header {
+    margin-top: 0em;
+    color: white;
+    font-size:20px;
+    background: #001C36;
+    margin-left:80px;
+    margin-right: 80px;
+    height: 100px;
+}
+
+#leftPanelButton .toggle {
+    text-align: left;
+    padding-left: 23px;
+    height: 100px;
+    background:rgba(0,28,54,0.9) url('images/menu.png') no-repeat;
+    background-position: 30px;
+
+}
+.icon-myshare{
+    background:rgba(0,28,54,0.9) url(images/icon-share.png) no-repeat !important;
+    background-position: 40px !important;
+
+}
+
+.icon-mysearch{
+    background:rgba(0,28,54,0.9) url(images/icon-search.png) no-repeat  !important;
+    background-position: 40px !important;
+}
+
+#rightPanelButton .toggle {
+
+    height: 100px;
+
+}
+
+.icon-myshare{
+
+    background-position: 23px !important;
+
+}
+
+.icon-mysearch{
+
+    background-position: 23px !important;
+   
+}
+
+
+#share a {
+    padding-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+#share a span{
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+/* Title */
+
+#title {
+    padding-left: 200px;
+    padding-top: 30px;
+    margin: 0 0 1.5em 0;
+    height: 100px;
+    background-position: 160px !important;
+
+}
+
+/* Nav */
+
+#nav {
+    position: relative;
+    text-align: left;
+}
+
+#nav a {
+    margin: 0 1em 0 1em;
+}
+
+/**********************************************************/
+/*Estilo para las listas                                  */
+/**********************************************************/
+
+/*Listas en sectores y subsectores*/
+/*Este es el UL*/
+.listviewSector{
+
+    font-size:18px;
+
+}
+
+.listviewSector li a{
+
+    padding: 25px;
+}
+
+
+@media (min-width: 760px) and (max-width: 979px) { 
+    .loadingPag{
+        top:80px;
+        left: 350px;
+    }
+
+
+}
+
+@media screen and (min-width: 979px)  {
+    .loadingPag{
+
+        top:60px;
+        left: 500px;
+    }
+
+}
+
+
+
+.tab-links a {
+    padding:6px 100px;
+    font-size:17px;
+    width: 100%
+
+}
+
+#results{
+
+
+    font-size: 15px;
+}
+
+#results thead{
+
+
+    font-size: 17px;
+
+}
+
+
+
+#divFuente{
+    font-size: 13px;
+
+    line-height:20px;
+}
+
+#container{
+    height: 500px !important;
+}
+
+.tab-links a {
+    padding:6px 80px;
+
+}
+
+#miMapa{
+    width: 65%; 
+    margin-left: 160px !important;
+    height:350px; 
+}
+
+
+.infoTerritorial{
+    font-size: 15px;
+}
+
+.infoTerritorial table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.infoTerritorial table thead tr{
+    font-size: 16px;
+    color:#fff;
+    background-color:  #A7A7A7 !important;
+    border-bottom:1px #494949 solid;
+    text-align: center;
+}
+
+.infoTerritorial table tr:nth-child(2n) {
+    background: #d1d1d1;
+
+}
+
+.infoTerritorial table tr:nth-child(2n+1){
+    background: #e6e6e6;
+}
+
+.infoTerritorial img{
+    width: 100%;
+    height: 4px;
+}
+
+#container1{
+    margin-bottom: 100px;
+}
+
+#rightPanel table{
+
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+#rightPanel select{
+
+    font-size: 15px;
+    width: 200px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    height: 60px;
+    background: #f6f6f6;
+    margin-top: 30px;
+}
+
+#btnWhatsApp{
+    display: none !important;
+}

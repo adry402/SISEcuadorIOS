@@ -1,0 +1,50 @@
+/* 
+    Document   : cabeceraSIISE
+    Created on : 04/08/2014, 09:37:00 AM
+    Author     : MCDS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#titleBar {
+    background: rgba(0,28,54,0.9) url(../images/icon-siise1.png) no-repeat !important;
+    background-position: 37px !important;
+}
+#header{
+    background: rgba(0,28,54,0.9) url(../images/icon-siise2.png) no-repeat center !important;
+    background-position: 95px !important;
+}
+
+
+@media  screen and (min-width : 321px) {
+    #titleBar {
+
+        background-position: 110px !important;
+    }
+}
+@media  screen and (max-width : 360px )and ( min-width: 321px) {
+
+    #titleBar {
+
+        background-position: 60px !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+
+    #header{
+        background-position: 145px !important;
+    } 
+}
+
+
+@media screen and (min-width: 979px)  {
+    
+    #header{
+        background-position: 10% !important;
+    } 
+     
+}
+
+
