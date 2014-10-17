@@ -89,7 +89,7 @@ body{
 
 #titleBar {
 
-     padding-top: 10px;
+    padding-top: 10px;
     font-size: 13px;
     margin: 0px auto;
     color: #fff;
@@ -109,6 +109,11 @@ body{
 #container{
     height: 340px
 }
+.mapaSitio{
+        font-size: 11px;
+        color:#fff;
+    }
+
 
 #miMapa{
     width: 100%; 

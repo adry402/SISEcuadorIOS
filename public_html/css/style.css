@@ -657,12 +657,12 @@ li.active a, li.active a:hover {
     font-family: hbold;
 }
 
-#mapaSitio{
+.mapaSitio{
     font-size: 12px;
    
     text-align: left;
     font-family: hlight;
-    line-height: 1.5
+    line-height: 1.4
 }
 
 .infoUbicacion table{
