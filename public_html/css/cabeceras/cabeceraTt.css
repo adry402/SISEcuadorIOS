@@ -1,18 +1,19 @@
 /* 
-    Document   : cabeceraSIISE
+    Document   : cabeceraTt
     Created on : 04/08/2014, 09:37:00 AM
-    Author     : MCDS
+    Author     : Adriana Romero
     Description:
-        Purpose of the stylesheet follows.
+        Hoja de estilo formato cabeceras consulta Territorial
 */
 
 #titleBar {
     background: rgba(0,28,54,0.9) url(../images/icon-tt1.png) no-repeat left !important;
-   background-position: 50px 7px !important; 
+   background-position: 50px 13px !important; 
 }
+
 #header{
     background: rgba(0,28,54,0.9) url(../images/icon-tt2.png) no-repeat center !important;
-    background-position: 100px 15px!important;
+    background-position: 100px !important;
 }
 
 
