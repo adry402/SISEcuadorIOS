@@ -167,7 +167,7 @@ body {
 }
 
 #bottomPanel {
-    background: rgba(0,28,54,0.9)  !important;
+    background: #f6f6f6;
 }
 .compartirT{
 
@@ -210,10 +210,20 @@ body {
     text-decoration: none;
 }
 
-#share a {
-    padding-bottom: 10px;
+#share a { 
+    width: 180px;
+    height: 50px;
     color: #000;
-    text-decoration: none;
+    font-family: hlight;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none
+    
+}
+
+#share a span{
+    padding-left: 30px;
+    
 }
 
 
@@ -258,12 +268,17 @@ body {
 
 
 #shareWhatsapp a{
-    height: 50px;
+    height: 50px; 
 }
 #shareMail a{
     height: 50px;
+   
 }
-
+#shareMailT a ,#shareWhatsappT a{
+    font-family: hlight;
+    font-weight: bold;
+    font-size: 13px;
+}
 
 #shareGoogle
 {
@@ -688,11 +703,13 @@ li.active a, li.active a:hover {
     padding-bottom: 30px;
     color: transparent;
     text-decoration: none;
+    
 }
 
 #contactBar{
     font-size: 16px;
     text-decoration: none;
+     
 }
 
 #labelUbicacion{
